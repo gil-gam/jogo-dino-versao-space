@@ -1,0 +1,48 @@
+body {
+    background-image: url(background2.png);
+    width: 100%;
+    height: 100%;
+}
+
+.alien {
+    width: 60px;
+    height: 37px;
+    background-image: url(alien.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.fire {
+    position: absolute;
+    width: 60px;
+    height: 31px;
+    bottom: 0;
+    background-image: url(fire.png);
+}
+
+.game-over {
+    text-align: center;
+    margin-top: 100px;
+    font-family: arial;
+    font-size: 50px;
+    color: white;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    background-image: url(background.png);
+    background-repeat: repeat-x;
+    animation: slideright 1000s infinite linear;
+    width: 100%;
+    height: 100%;
+    }

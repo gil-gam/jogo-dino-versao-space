@@ -1,9 +1,7 @@
 const alien = document.querySelector('.alien');
 const background = document.querySelector('.background');
-
 let isJumping = false;
 let position = 0;
-
 
 function handleKeyUp(event) {
     if(event.keyCode === 32) {
@@ -13,14 +11,6 @@ function handleKeyUp(event) {
         }        
     }
 }
-
-
-function music() {
-    var audio = new Audio('music.mp3');
-    audio.addEventListener('canplaythrough', function() {
-    audio.play();
-});
-};
 
 function salto() {
     var audio = new Audio('jump.wav');
